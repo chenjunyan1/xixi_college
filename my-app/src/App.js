@@ -13,7 +13,7 @@ const Dynamic = lazy(() => import('./Assembly/Dynamic'));//文章与动态
 const Home = lazy(() => import('./Assembly/Home'));//首页
 const Support = lazy(() => import('./Assembly/Support'));//支持我们
 const Work_open = lazy(() => import('./Assembly/Work_open'));//信息公开
-
+const Img_404 = lazy(() => import('./Assembly/Bacteria_char/Img_404'));//
 
 export default class App extends Component {
   render() {
@@ -93,6 +93,7 @@ export default class App extends Component {
               <Route path="/Dynamic" component={Dynamic} />
               <Route path="/Support" component={Support} />
               <Route path="/Work_open" component={Work_open} />
+              <Route path="*" component={Img_404}/>
             </Suspense>
           </Switch>
           </Router>
