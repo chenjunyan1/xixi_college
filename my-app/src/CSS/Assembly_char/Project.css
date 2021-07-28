@@ -1,0 +1,48 @@
+.Project_all{
+    display: flex;
+}
+
+.Project_shang{
+    width: 216px;
+    height: 288px;
+
+}
+.Project_shang>*{
+    width: 216px;
+    height: 288px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Project_xia{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 300px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Project_title{
+    text-align: center;
+}
+
+.p{
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Project_all {
+        display: flex;
+        flex-direction: column;
+    }
+    .Project_shang{
+        width:310px;
+        height: 288px;;
+    }
+    .Project_shang>*{
+        width: 310px;
+        border-radius: 10px 10px 0px 0px;
+    }
+}

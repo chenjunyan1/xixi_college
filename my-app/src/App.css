@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.xixi_logo{
+  width: 168px;
+}
+.daohanglan{
+  width: 100%;
+  height: 168px;
+  display: flex;
+  justify-content: space-around;
+}
+.zuo{
+  display: flex;
+  align-items: center;
+}
+.you{
+  display: flex;
+  align-items: center;
+}
+.you>*{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+}
+.xiala{
+  position:absolute;
+  width: fit-content;
+  display: none;
+}
+.xiala>*{
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid slategrey;
+
+}
+.chumo:hover .xiala{
+  display: inline;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*响应式*/
+
+@media screen and (max-width: 600px) {
+  .daohanglan{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .zuo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .you{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .you>*{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 40px);
+    font-size: 26px;
+    border-bottom: 5px solid slategrey;
+
+  }
+  .xiala{
+    display: inline;
+    position: static;
+  }
+  .xiala>*{
+    font-size: 17px;
+    width: fit-content;
+    /* border-style: solid; */
+
+  }
+}
