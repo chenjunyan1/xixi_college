@@ -93,7 +93,7 @@ export default class App extends Component {
               <Route path="/Dynamic" component={Dynamic} />
               <Route path="/Support" component={Support} />
               <Route path="/Work_open" component={Work_open} />
-              <Route path="*" component={Img_404}/>
+              {/* <Route path="*" component={Img_404} /> */}
             </Suspense>
           </Switch>
           </Router>

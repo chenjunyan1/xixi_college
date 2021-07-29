@@ -29,4 +29,8 @@
 }
 
 /*响应式*/
-
+@media screen and (max-width: 600px) {
+    .yemian_1{
+        height: 300px;
+    }
+}
