@@ -80,22 +80,22 @@ export default class App extends Component {
               <Link to="/Support">支持我们</Link>
            </div>
          </div>
-          <Switch>
-            <Suspense fallback={
-            <header className="App-header">
-                Loading...
-                {/* <img src="" className="App-logo" alt="logo" /> */}
-            </header>}>
-              <Route exact path="/" component={Home} />
-              <Route path="/Brief_Introduction" component={Brief_Introduction} />
-              <Route path="/About" component={About} />
-              <Route path="/Contact" component={Contact} />
-              <Route path="/Dynamic" component={Dynamic} />
-              <Route path="/Support" component={Support} />
-              <Route path="/Work_open" component={Work_open} />
-              {/* <Route path="*" component={Img_404} /> */}
+         <Suspense fallback={
+              <header className="App-header">
+                  Loading...
+                  {/* <img src="" className="App-logo" alt="logo" /> */}
+              </header>}>
+              <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/Brief_Introduction" component={Brief_Introduction} />
+                  <Route path="/About" component={About} />
+                  <Route path="/Contact" component={Contact} />
+                  <Route path="/Dynamic" component={Dynamic} />
+                  <Route path="/Support" component={Support} />
+                  <Route path="/Work_open" component={Work_open} />
+                  <Route path="*" component={Img_404} />
+              </Switch>
             </Suspense>
-          </Switch>
           </Router>
       </div>
     )
