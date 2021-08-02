@@ -13,18 +13,73 @@ const Dynamic = lazy(() => import('./Assembly/Dynamic'));//文章与动态
 const Home = lazy(() => import('./Assembly/Home'));//首页
 const Support = lazy(() => import('./Assembly/Support'));//支持我们
 const Work_open = lazy(() => import('./Assembly/Work_open'));//信息公开
-const Img_404 = lazy(() => import('./Assembly/Bacteria_char/Img_404'));//
+const Img_404 = lazy(() => import('./Assembly/Bacteria_char/Img_404'));//404组件
+
+let click_on = 1;
+// let more_styly = {};
+
 
 export default class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      value_1:'1',
+      more_style : {},
+      daohang:{},
+      more:{},
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+  handleClick(e) {
+    e.preventDefault();
+    console.log('被点击');
+        if (click_on == 1) {
+          click_on = 2;
+          this.setState({
+            more_style:{
+            display:'flex',
+          },
+          daohang:{
+            flexDirection: 'column',
+          },
+          more:{
+            justifyContent: 'center',
+
+          }
+          });
+          
+          console.log('flex');
+        }else{
+          click_on = 1;
+          this.setState({
+            more_style:{
+            display:'none'
+          },
+          daohang:{
+            flexDirection: 'row',
+            justifyContent: 'spaceAround',
+            flexWrap: 'wrap',
+          },
+          });
+          console.log('none');
+        }
+  }
   render() {
     return (
       <div>
        <Router>
-         <div className="daohanglan">
+         <div className="daohanglan" style={this.state.daohang}>
            <div className="zuo">
              <img className="xixi_logo" src="Img/Logo_img.jpg" alt="希希学院"/>
            </div>
-           <div className="you">
+           <div className="you" style={this.state.more_style}>
               <Link to="/">首页</Link>
               <div className="chumo">
                 <div>
@@ -78,6 +133,9 @@ export default class App extends Component {
               </div>
               <Link to="/Contact">联系我们</Link>
               <Link to="/Support">支持我们</Link>
+           </div>
+           <div className="more" onClick={this.handleClick} style={this.state.more}>
+             <img src="Img/more.svg" alt="" />
            </div>
          </div>
          <Suspense fallback={
