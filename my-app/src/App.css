@@ -40,12 +40,17 @@
 
 .xixi_logo{
   width: 168px;
+
+}
+.zong{
+  background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));     
 }
 .daohanglan{
   width: 100%;
   height: 168px;
   display: flex;
   justify-content: space-around;
+  backdrop-filter: blur(10px) brightness(100%);
 }
 .zuo{
   display: flex;
@@ -83,8 +88,6 @@ a{
   display: none;
 
 }
-
-
 
 /*响应式*/
 

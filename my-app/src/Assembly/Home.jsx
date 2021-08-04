@@ -20,8 +20,8 @@ export default class home extends Component {
                     </div>
                     <div>
                         <div className="xiangmu_2">
-                            <Project Img_one={"Img/希希学园项目用图.jpg"} Title={"希希学园"} Content={"致力于为儿童提供全方位的全面性教育，帮助他们掌握科学、正确的性健康知识，形成积极的情感态度价值观，健康、快乐成长。"} />
-                            <Project Img_one={"Img/悦读悦成长项目图.jpg"} Title={"悦读悦成长"} Content={""} />
+                            <Project Img_one={"Img/希希学园项目用图.jpg"} Title={"希希学园"} Content={"致力于为儿童提供全方位的全面性教育，帮助他们掌握科学、正确的性健康知识，形成积极的情感态度价值观，健康、快乐成长。"} Links={"https://xixi-college.vercel.app/"}  />
+                            <Project Img_one={"Img/悦读悦成长项目图.jpg"} Title={"悦读悦成长"} Content={"是为基层居民提供读书、学习的场所，是传播精神文明的阵地"}Links={"https://chongxi-library.vercel.app/"} />
                         </div>
                     </div>
                 </div>

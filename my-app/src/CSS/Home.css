@@ -20,11 +20,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.xiangmu_1{}
+.xiangmu_1{
+    background: antiquewhite;
+}
 .xiangmu_2>*{
     border-radius: 10px;
     margin-bottom: 20px;
-    background: #c6ffdd;  /* fallback for old browsers */      background: -webkit-linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));  /* Chrome 10-25, Safari 5.1-6 */      background: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    background: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));
+    box-shadow:0 0 0.5em 0 #1d1515;   
 }
 
 /*响应式*/
