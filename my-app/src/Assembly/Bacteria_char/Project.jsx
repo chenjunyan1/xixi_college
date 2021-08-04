@@ -18,7 +18,7 @@ export default class Project extends Component {
                         <h1 className="Project_title">{this.props.Title}</h1>
                         <p className="p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.props.Content}</p>
                     </div>
-                    <div className="Project_title">
+                    <div className="Project_title xia_yuedu">
                         <a className="p" href={this.props.Links} >阅读全文- &gt;</a>
                     </div>
                 </div>

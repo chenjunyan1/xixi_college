@@ -141,7 +141,6 @@ export default class App extends Component {
               </div>
             </div>
             </div>
-
             <Suspense fallback={
                   <header className="App-header">
                       Loading...

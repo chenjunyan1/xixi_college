@@ -10,10 +10,15 @@ export default class home extends Component {
     render() {
         return (
             <div>
+                <br />
+                <hr />
+                <br />
                 <div className="yemian_1">
                     <div></div>
                 </div>
                 <div className="xiangmu_1">
+                    <br />
+                    <hr />
                     <div className="mubiao">
                         <h2>我们的项目</h2>
                         <p>项目愿景：每个孩子在成长过程中都可以接受到适合其年龄、认知水平的全面性教育，掌握科学、正确的性知识，形成积极的性态度和价值观，能够正确认识自己、有效保护自己。</p>

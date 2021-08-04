@@ -1,5 +1,7 @@
 .Project_all{
     display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .Project_shang{
@@ -30,6 +32,10 @@
 
 .p{
     font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.xia_yuedu{
     margin-bottom: 10px;
 }
 
