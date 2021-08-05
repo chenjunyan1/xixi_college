@@ -14,7 +14,7 @@ const Home = lazy(() => import('./Assembly/Home'));//首页
 const Support = lazy(() => import('./Assembly/Support'));//支持我们
 const Work_open = lazy(() => import('./Assembly/Work_open'));//信息公开
 const Img_404 = lazy(() => import('./Assembly/Bacteria_char/Img_404'));//404组件
-
+const BecomeAVolunteer = lazy(() => import('./Assembly/Volunteer'))
 let click_on = 1;
 // let more_styly = {};
 
@@ -31,7 +31,6 @@ export default class App extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-
   }
 
   handleChange(event) {
@@ -89,7 +88,8 @@ export default class App extends Component {
                       {/* <Link to="/Dynamic">文章与动态 -&gt;</Link> */}
                     </div>
                     <div className="xiala">
-                      <div>参与活动|成为志愿者</div>
+                      <Link to="/Volunteer">参与活动|成为志愿者</Link>
+                      {/* <div></div> */}
                       <div>项目进展</div>
                       <div>流动儿童返乡追踪</div>
                       <div>领域研究</div>
@@ -154,6 +154,7 @@ export default class App extends Component {
                       <Route path="/Dynamic" component={Dynamic} />
                       <Route path="/Support" component={Support} />
                       <Route path="/Work_open" component={Work_open} />
+                      <Route path="/Volunteer" component={BecomeAVolunteer}/>
                       <Route path="*" component={Img_404} />
                   </Switch>
                 </Suspense>

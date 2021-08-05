@@ -1,0 +1,21 @@
+.Volunteer_img{
+    width: 100%;
+}
+.Volunteer_img>img{
+    width: 25%;
+}
+/* img{
+    width: 100px; 
+} */
+.title_Volunteer{
+    display: flex;
+    justify-content: center;
+}
+.bianda_Volunteer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.bianda_Volunteer>img{
+    width: 100px;
+}
