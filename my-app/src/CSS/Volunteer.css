@@ -1,12 +1,13 @@
 .Volunteer_img{
     width: 100%;
+    background: cadetblue;
 }
 .Volunteer_img>img{
     width: 25%;
+    transition: all 1.5s;
+    padding-bottom: 10px;
+    /* transition: all 1.5s ease; */
 }
-/* img{
-    width: 100px; 
-} */
 .title_Volunteer{
     display: flex;
     justify-content: center;
@@ -15,7 +16,23 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
+    padding-bottom: 50px;
 }
 .bianda_Volunteer>img{
     width: 100px;
 }
+.xiangshang{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    animation:turnY 6s linear infinite
+}
+.xiangshang>img{
+    width: 50px;
+
+}
+
+@keyframes turnY{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg);}
+  }

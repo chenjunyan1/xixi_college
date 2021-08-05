@@ -29,13 +29,10 @@ export default class App extends Component {
       more:{},
     };
 
-    this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
+
   handleClick(e) {
     e.preventDefault();
     console.log('被点击');
