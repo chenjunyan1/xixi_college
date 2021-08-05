@@ -56,7 +56,7 @@ export default class Volunteer extends Component {
         return (
             <div>
                 <a className="xiangshang" href="#top_zhaomu">
-                    <img src="Img/shang.svg" alt="" />
+                    <img src="Img/Shang.svg" alt="" />
                 </a>
                 <div className="title_Volunteer">
                     <h1 id="top_zhaomu">志愿者招募</h1>
