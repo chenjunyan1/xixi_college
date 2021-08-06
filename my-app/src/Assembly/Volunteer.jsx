@@ -15,54 +15,49 @@ export default class Volunteer extends Component {
           img:{
               width:'25%'
           },
-        };
+          src:'Img/Fang_da.svg',
+        }
     
         this.handleClick = this.handleClick.bind(this);
-        // this.handleClick = this.hand.bind(this);
       }
-    //   hand(e){
-    //     e.preventDefault();
-    //     if (this.state.img.width == '25%') {
-    //         this.setState({
-    //             img:{
-    //                 width:'50%',
-    //             }
-    //         })
-    //     }
-    //   }
+
       handleClick(e) {
         e.preventDefault();
         if (this.state.img.width == '25%') {
             this.setState({
                 img:{
                     width:'50%',
-                }
+                },
+                src:'Img/Fang_da.svg',
             })
         }else if (this.state.img.width == '50%') {
             this.setState({
                 img:{
                     width:'100%',
-                }
+                },
+                src:'Img/Suo_xiao.svg',
+
             })
         }else if (this.state.img.width == '100%') {
             this.setState({
                 img:{
                     width:'25%',
-                }
+                },
+                src:'Img/Fang_da.svg',
             })
         }
     }
     render() {
         return (
             <div>
-                <a className="xiangshang" href="#top_zhaomu">
+                <a title="一键置顶" className="xiangshang" href="#/top_zhaomu">
                     <img src="Img/Shang.svg" alt="" />
                 </a>
                 <div className="title_Volunteer">
-                    <h1 id="top_zhaomu">志愿者招募</h1>
+                    <h1 id="/top_zhaomu">志愿者招募</h1>
                 </div>
-                <div className="bianda_Volunteer">
-                    <img onClick={this.handleClick} src="Img/BianDa.svg" alt="大小调整" />
+                <div title="放大缩小器" className="bianda_Volunteer">
+                    <img className="shang_chumo" onClick={this.handleClick} src={this.state.src} alt="大小调整" />
                 </div>
                 <div className="Volunteer_img">
                     {

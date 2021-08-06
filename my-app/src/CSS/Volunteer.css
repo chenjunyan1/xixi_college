@@ -6,30 +6,52 @@
     width: 25%;
     transition: all 1.5s;
     padding-bottom: 10px;
-    /* transition: all 1.5s ease; */
 }
 .title_Volunteer{
     display: flex;
     justify-content: center;
 }
 .bianda_Volunteer{
+    background: cadetblue;
+    width: 100%;
+    height: 150px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 100px;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .bianda_Volunteer>img{
     width: 100px;
+    height: 100px;
 }
 .xiangshang{
     position: fixed;
     bottom: 50px;
     right: 50px;
-    animation:turnY 6s linear infinite
+    animation:turnY 6s linear infinite;
+}
+.xiangshang:hover{
+    animation:turnY 0s linear infinite;
+}
+.xiangshang>img:hover{
+    width: 130px;
+    opacity: 1;
+    /* height: 130px; */
+
 }
 .xiangshang>img{
+    transition: all 1.2s;
+    opacity: 0.5;
     width: 50px;
+}
+.shang_chumo{
+    transition: all 1.2s;
+    margin-right: 50px;
 
+}
+.shang_chumo:hover{
+    width: 75px;
+    height: 75px;
 }
 
 @keyframes turnY{
