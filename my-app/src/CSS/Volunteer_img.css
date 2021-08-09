@@ -1,0 +1,184 @@
+.Center{
+    display: flex;
+    justify-content: center;
+}
+.Erect{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+.Bold{
+    font-weight:900;
+}
+
+.sikao{
+    font-size: 30px;
+    font-weight:900;
+    margin-left: 15px;
+}
+.Beijing>*{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: darkslateblue;
+    transform: rotate(12deg);
+    border-radius: 10px;
+}
+.Beijing_2>div>*{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+.Beijing_2>*{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Beijing_2>div:first-child>*{
+    background:lightblue
+}
+.Beijing_2>div:nth-child(2)>*{
+    background: lightgreen;
+}
+.Beijing_2>div:nth-child(2){
+    margin-top: 70px;
+}
+.Beijing_2>div>div:first-child{
+    width: 10px;
+    background: cadetblue;
+    margin-left: 50px;
+}
+
+/* 谁是流动儿童 */
+
+.shei{
+    font-size: 20px;
+}
+.shei>div>*{
+    width: 400px;
+}
+.shei>div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+.shei>div:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+.shei>div:nth-child(5){
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 58px;
+}
+.shei>div>div>div:first-child{
+    font-weight:900;
+}
+.hukou{
+    font-size: 75px;
+    transform: rotate(328deg);
+}
+.fazhan>div>div>div:first-child{
+    font-weight:900;
+}
+.fazhan{
+    font-size: 20px;
+}
+.fazhan>div:nth-child(2n+1)>div{
+    padding-left: 15px;
+    border-right: 6px solid #2196F3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 1%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fazhan>div:nth-child(2n+2)>div{
+    padding-right: 15px;
+    border-left: 6px solid #219719;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 1%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fazhan>div:nth-child(2n+0){
+    display: flex;
+    justify-content: flex-end;
+}
+.fazhan>div:nth-child(1n+0){
+    display: flex;
+}
+.yuanjing{
+    display: flex;
+    justify-content: center;
+}
+.yuanjing>div{
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* 理念 */
+
+.linian>*{
+    display: flex;
+    justify-content: center;
+}
+.linian>div>div>div:first-child{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.linian>div>*>div{
+    text-align: center;
+    font-size: 25px;
+    font-weight:500;
+}
+.linian>div>*{
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.linian>div>*:nth-child(-n+3){
+    border-right: 1px solid #d9d9d9;
+}
+
+
+/* 使命 */
+.shiming_1{
+    /* background-color: #f2f2f2; */
+}
+.shiming{
+    background-color: #f2f2f2;
+}
+.shiming>div{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.shiming>div>div>img{
+    height: 300px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.shiming>div>:nth-child(2){
+    padding-top: 30px;
+}
+

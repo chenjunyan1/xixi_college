@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../CSS/Volunteer.css';
-//志愿者招募
+//往期活动照片
 
 
 let ImgRecruit_arr = [];
@@ -19,9 +19,10 @@ export default class Volunteer extends Component {
         }
     
         this.handleClick = this.handleClick.bind(this);
+
       }
 
-      handleClick(e) {
+      handleClick(e){
         e.preventDefault();
         if (this.state.img.width == '25%') {
             this.setState({
@@ -46,7 +47,8 @@ export default class Volunteer extends Component {
                 src:'Img/Fang_da.svg',
             })
         }
-    }
+      }
+
     render() {
         return (
             <div>
@@ -54,7 +56,7 @@ export default class Volunteer extends Component {
                     <img src="Img/Shang.svg" alt="" />
                 </a>
                 <div className="title_Volunteer">
-                    <h1 id="/top_zhaomu">志愿者招募</h1>
+                    <h1 id="/top_zhaomu">往期活动IMG</h1>
                 </div>
                 <div title="放大缩小器" className="bianda_Volunteer">
                     <img className="shang_chumo" onClick={this.handleClick} src={this.state.src} alt="大小调整" />
@@ -63,11 +65,10 @@ export default class Volunteer extends Component {
                     {
                         ImgRecruit_arr.map((name,index) => {
                             return(
-                                <img onClick={this.hand} style={this.state.img} key={index+name} src={"ImgRecruit/"+ImgRecruit_arr[index]} alt="希希学园志愿者招募" />
+                                <img  style={this.state.img} key={index+name} src={"ImgRecruit/"+ImgRecruit_arr[index]} alt="希希学园志愿者招募" />
                             )
                         })
                     }
-
                 </div>
             </div>
         )

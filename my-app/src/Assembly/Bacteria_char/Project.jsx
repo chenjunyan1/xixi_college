@@ -1,12 +1,15 @@
 //项目简介
 import React, { Component } from 'react'
 import '../../CSS/Assembly_char/Project.css'
+
+
 export default class Project extends Component {
     constructor(props) {
         super(props)
         this.state = {
         }
     }
+    
     render() {
         return (
             <div className="Project_all">

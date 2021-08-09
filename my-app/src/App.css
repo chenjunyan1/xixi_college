@@ -43,14 +43,16 @@
 
 }
 .zong{
-  background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));     
+  background: honeydew;
+
+  /* background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));      */
 }
 .daohanglan{
   width: 100%;
   height: 168px;
   display: flex;
   justify-content: space-around;
-  backdrop-filter: blur(10px) brightness(100%);
+  /* backdrop-filter: blur(10px) brightness(100%); */
 }
 .zuo{
   display: flex;
@@ -75,10 +77,10 @@
   margin-top: 5px;
   margin-bottom: 5px;
   border-bottom: 2px solid slategrey;
-
+  background: honeydew;
 }
 .chumo:hover .xiala{
-  display: inline;
+  display: inline-grid;
 }
 a{
   text-decoration: none;
@@ -87,6 +89,12 @@ a{
 .more{
   display: none;
 
+}
+a:hover{
+  color: red;
+}
+.se:hover{
+  color: red;
 }
 
 /*响应式*/

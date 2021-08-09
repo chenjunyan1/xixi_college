@@ -14,9 +14,10 @@ const Home = lazy(() => import('./Assembly/Home'));//首页
 const Support = lazy(() => import('./Assembly/Support'));//支持我们
 const Work_open = lazy(() => import('./Assembly/Work_open'));//信息公开
 const Img_404 = lazy(() => import('./Assembly/Bacteria_char/Img_404'));//404组件
-const BecomeAVolunteer = lazy(() => import('./Assembly/Volunteer'))
+const ActivityPhotos = lazy(() => import('./Assembly/Volunteer'));//往期活动照片
+const Volunteer = lazy(() => import('./Assembly/Volunteer_img'));//志愿者招募
+
 let click_on = 1;
-// let more_styly = {};
 
 
 export default class App extends Component {
@@ -80,12 +81,14 @@ export default class App extends Component {
               <div className="you" style={this.state.more_style}>
                   <Link to="/">首页</Link>
                   <div className="chumo">
-                    <div>
+                    <div className="se">
                       <div>文章与动态 -&gt;</div>
                       {/* <Link to="/Dynamic">文章与动态 -&gt;</Link> */}
                     </div>
                     <div className="xiala">
                       <Link to="/Volunteer">参与活动|成为志愿者</Link>
+                      {/* <div></div> */}
+                      <Link to="/ActivityPhotos">往期活动照片</Link>
                       {/* <div></div> */}
                       <div>项目进展</div>
                       <div>流动儿童返乡追踪</div>
@@ -95,7 +98,7 @@ export default class App extends Component {
                     </div>
                   </div>
                   <div className="chumo">
-                    <div>
+                    <div className="se">
                       <div>项目简介 -&gt;</div>
                       {/* <Link to="/Brief_Introduction">项目简介 -&gt;</Link> */}
                     </div>
@@ -107,7 +110,7 @@ export default class App extends Component {
                     </div>
                   </div>
                   <div className="chumo">
-                    <div>
+                    <div className="se">
                         <div>关于我们 -&gt;</div>
                         {/* <Link to="/About">关于我们 -&gt;</Link> */}
                     </div>
@@ -118,7 +121,7 @@ export default class App extends Component {
                     </div>
                   </div>
                   <div className="chumo">
-                    <div>
+                    <div className="se">
                       <div>信息公开 -&gt;</div>
                         {/* <Link to="/Work_open">信息公开 -&gt;</Link> */}
                     </div>
@@ -151,8 +154,11 @@ export default class App extends Component {
                       <Route path="/Dynamic" component={Dynamic} />
                       <Route path="/Support" component={Support} />
                       <Route path="/Work_open" component={Work_open} />
-                      <Route path="/Volunteer" component={BecomeAVolunteer}/>
-                      <Route path="*" component={Img_404} />
+                      <Route path="/ActivityPhotos" component={ActivityPhotos}/>
+                      <Route path="/Volunteer" component={Volunteer}/>
+                      {/* <Route path='/Xixi_nei' component={Xixi_nei} /> */}
+                      {/* 404以上页面都没有找到，就显示404页面 */}
+                      <Route component={Img_404} />
                   </Switch>
                 </Suspense>
           </div>
