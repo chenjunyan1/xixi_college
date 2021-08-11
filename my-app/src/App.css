@@ -71,13 +71,14 @@
   position:absolute;
   width: fit-content;
   display: none;
+  background: honeydew;
+
 }
 .xiala>*{
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 5px;
   border-bottom: 2px solid slategrey;
-  background: honeydew;
 }
 .chumo:hover .xiala{
   display: inline-grid;
@@ -144,5 +145,8 @@ a:hover{
   }
   .more>img{
     width: 100px;
+  }
+  .chumo:hover .xiala{
+    display:block;
   }
 }

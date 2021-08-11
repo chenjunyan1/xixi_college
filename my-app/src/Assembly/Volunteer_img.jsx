@@ -1,13 +1,34 @@
 //志愿者招募
 import '../CSS/Volunteer_img.css'
 import React, { Component } from 'react'
-
 export default class Volunteer_img extends Component {
+    
     render() {
         return (
             <div>
                 <div>
                     <hr />
+                    <div className="xingjiaoyu">
+                        <h1>性教育守护流动儿童</h1>
+                    </div>
+                    <div>
+                        <h1>项目缘起</h1>
+                        <hr />
+                        <br />
+                        <div className="sikao">
+                            <div className="Center">
+                                <h3>“一起发生在打工子弟学校的性侵事件”</h3>
+                            </div>
+                            <div>
+                                <h3>并非“偶发”、“个案”</h3>
+                                <li>不知道</li>
+                                <li>不报警</li>
+                                <li>不求助</li>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
                     <div>
                         <h1>思考</h1>
                         <hr />
@@ -28,10 +49,10 @@ export default class Volunteer_img extends Component {
                         <hr />
                         <br />
                         <div className="Erect">
-                           <div className="Center Beijing">
+                           <div className="Beijing Fensan">
                                <h2>背景</h2>
                            </div>
-                           <div className="Center Beijing_2">
+                           <div className="Fensan Beijing_2">
                                <div>
                                    <div></div>
                                    <div>教育资源</div>
@@ -46,7 +67,61 @@ export default class Volunteer_img extends Component {
                                    <div>有遭受性侵害的危险</div>
                                </div>
                            </div>
-
+                           
+                           <div>
+                           <br />
+                           <br />
+                           <hr />
+                           <br />
+                           <br />
+                               <div className="xuexiao">
+                                    <div>
+                                        <h1>学校教育</h1>
+                                        <div>北京希希儿童关爱中心目前已与近 20 所学校合作，开设全面性教育课程。
+                                            课程符合联合国教科文组织《全面性教育技术指导纲要》及教育部《中小学健
+                                            康教育指导纲要》的要求。课程涵盖 1-6 年级 12 学期，每学期 6 节课。不同
+                                            年级主题不同，内容前后衔接，循序渐进，学生在不同年龄段接受适合的性健
+                                            康知识。在小学阶段，通过 72 节课程，给孩子全面性教育。
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                           <hr />
+                           <div className="kecheng">
+                               <div>
+                                   <div>
+                                       <div>人体发育</div>
+                                       <div>性健康行为</div>
+                                       <div>性与生殖健康</div>
+                                   </div>
+                                   <div>
+                                       <div>
+                                           性教育
+                                       </div>
+                                       <div>
+                                           <div>课</div>
+                                           <div>程</div>
+                                       </div>
+                                   </div>
+                                   <div>
+                                       <div>人际关系</div>
+                                       <div>价值观、态度与技能</div>
+                                       <div>文化、社会与权力</div>
+                                   </div>
+                               </div>
+                           </div>
+                           <hr />
+                           <div className="shequ">
+                                <div>
+                                    <h1>社区教育</h1>
+                                    <div className="sikao">
+                                        <li>全面性教育系列课程（针对不同年龄段儿童，每期 10 次课</li>
+                                        <li>专题讲座（“青春期知识讲座”、“认识身体，学会自我保护”等）</li>
+                                        <li>家长课堂（讲座、读书会）</li>
+                                        <li>亲子游园会</li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <br />
                         <br />
@@ -228,6 +303,41 @@ export default class Volunteer_img extends Component {
                                 </div>
                             </div>
                             
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                    <div>
+                        <h1>项目产出</h1>
+                        <hr />
+                        <br />
+                        <div className="chanchu">
+                            <div>
+                                <div>
+                                    <div>
+                                        <img src="Img_Linian/chanchu (1).png" alt="" />
+                                    </div>
+                                    <div>
+                                        <div>支持22所学校开设性教育课程</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="Img_Linian/chanchu (2).png" alt="" />
+                                    </div>
+                                    <div>
+                                        <div>累计培训教师400多人</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="Img_Linian/chanchu (3).png" alt="" />
+                                    </div>
+                                    <div>
+                                        <div>本学期服务流动儿童4072人</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <br />
                         <br />

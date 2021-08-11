@@ -22,7 +22,7 @@ export default class Project extends Component {
                         <p className="p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.props.Content}</p>
                     </div>
                     <div className="Project_title xia_yuedu">
-                        <a className="p" href={this.props.Links} >阅读全文- &gt;</a>
+                        <a className="p" href={this.props.Links} >{this.props.yuedu}- &gt;</a>
                     </div>
                 </div>
             </div>

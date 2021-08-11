@@ -16,18 +16,32 @@ h1{
     font-weight:900;
 }
 
+
+.xingjiaoyu{
+    padding: 40px 40px;
+    color: white;
+    background: brown;
+}
 .sikao{
     font-size: 30px;
     font-weight:900;
     margin-left: 15px;
 }
+.Fensan{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Beijing{
+    display: flex;
+    justify-content: space-evenly;
+}
 .Beijing>*{
-    padding-left: 200px;
-    padding-right: 200px;
+    width: 100%;
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background: darkslateblue;
-    transform: rotate(12deg);
+    transform: rotate(9deg);
     border-radius: 10px;
 }
 .Beijing_2>div>*{
@@ -56,10 +70,84 @@ h1{
     margin-left: 50px;
 }
 
+/* 学校 */
+.xuexiao{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background:#f2f2f2;
+    /* border-radius: 20px; */
+    /* color: white; */
+}
+.xuexiao>div{
+    padding: 30px;
+}
+.xuexiao>*>div{
+    width: 700px;
+    text-align: center;
+    font-size: 20px;
+    text-indent: 48px;
+
+}
+/* 课程 */
+.kecheng{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.kecheng>div{
+    display: flex;
+}
+.kecheng>div>div>*{
+    width: 250px;
+    background: darkseagreen;
+    border: ridge;
+}
+.kecheng>div>div:nth-child(2n+1)>*{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+.kecheng>div>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px; 
+    font-weight: 700;
+}
+.kecheng>div>div:nth-child(2)>*{
+    /* border-radius: 20px; */
+    background: white;
+    border: none;
+
+    /* color: white;s */
+}
+.kecheng>div>div:nth-child(1)>*{
+    border-radius: 50px 10px 10px 10px;
+    transform: rotate(22deg);
+    margin-right: 20px;
+}
+.kecheng>div>div:nth-child(3)>*{
+    border-radius: 10px 50px 10px 10px;
+    transform: rotate(338deg);
+    margin-left:  20px;
+}
+
+.shequ{
+    margin-top: 100px;
+    background: #f2f2f2;
+    padding-bottom: 40px;
+}
+
 /* 谁是流动儿童 */
 
 .shei{
     font-size: 20px;
+    text-indent: 48px;
+
 }
 .shei>div>*{
     width: 400px;
@@ -128,6 +216,8 @@ h1{
     width: 500px;
     text-align: center;
     font-size: 20px;
+    text-indent: 48px;
+
 }
 
 
@@ -170,6 +260,8 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 20px;
+    text-indent: 48px;
+
 }
 
 .shiming>div>div>img{
@@ -183,3 +275,30 @@ h1{
     width: 400px;
 }
 
+/* 项目产出 */
+.chanchu{
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.chanchu>div{
+    display: flex;
+    justify-content: space-around;
+    font-size: 27px;
+    font-weight: 700;
+
+}
+.chanchu>div>*{
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    background:#f2f2f2;
+    margin: 20px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.chanchu>*>*>*>img{
+    border-radius: 37px;
+}

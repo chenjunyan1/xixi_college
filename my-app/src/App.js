@@ -86,38 +86,37 @@ export default class App extends Component {
                       {/* <Link to="/Dynamic">文章与动态 -&gt;</Link> */}
                     </div>
                     <div className="xiala">
-                      <Link to="/Volunteer">参与活动|成为志愿者</Link>
+                      <div>参与活动|成为志愿者</div>
+                      <div>往期活动照片</div>
                       {/* <div></div> */}
-                      <Link to="/ActivityPhotos">往期活动照片</Link>
-                      {/* <div></div> */}
-                      <div>项目进展</div>
                       <div>流动儿童返乡追踪</div>
-                      <div>领域研究</div>
+                      <div>领域研究</div>{/*教材框架介绍*/}
                       <div>流动有希望</div>
                       <div>职位招聘</div>
                     </div>
                   </div>
                   <div className="chumo">
                     <div className="se">
-                      <div>项目简介 -&gt;</div>
-                      {/* <Link to="/Brief_Introduction">项目简介 -&gt;</Link> */}
+                      {/* <div>项目简介 -&gt;</div> */}
+                      <Link to="/Brief_Introduction">项目简介 -&gt;</Link>
                     </div>
                     <div className="xiala">
-                      <div>行动倡导</div>
-                      <div>传播倡导</div>
-                      <div>研究倡导</div>
-                      <div>往期项目</div>
+                      <div>项目进展</div>
+                      <div>性教育理念</div>
+                      <div>全面性教育的关键概念</div>
+                      {/* <div>教材框架介绍</div> */}
                     </div>
                   </div>
                   <div className="chumo">
                     <div className="se">
-                        <div>关于我们 -&gt;</div>
-                        {/* <Link to="/About">关于我们 -&gt;</Link> */}
+                        {/* <div>关于我们 -&gt;</div> */}
+                        <Link to="/About">关于我们 -&gt;</Link>
                     </div>
                     <div className="xiala">
-                      <div>使命愿景</div>
-                      <div>团队成员</div>
-                      <div>理事会成员</div>
+                      <div>希希学园介绍</div>
+                      <div>机构发展历程</div>
+                      <div>愿景理念使命</div>
+                      <div>成员</div>
                     </div>
                   </div>
                   <div className="chumo">
@@ -148,7 +147,7 @@ export default class App extends Component {
                   </header>}>
                   <Switch>
                       <Route exact path="/" component={Home} />
-                      <Route path="/Brief_Introduction" component={Brief_Introduction} />
+                      <Route path="/Brief_Introduction" component={Volunteer} />
                       <Route path="/About" component={About} />
                       <Route path="/Contact" component={Contact} />
                       <Route path="/Dynamic" component={Dynamic} />
