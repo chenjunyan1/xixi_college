@@ -82,8 +82,8 @@ export default class App extends Component {
                   <Link to="/">首页</Link>
                   <div className="chumo">
                     <div className="se">
-                      <div>文章与动态 -&gt;</div>
-                      {/* <Link to="/Dynamic">文章与动态 -&gt;</Link> */}
+                      {/* <div>文章与动态 -&gt;</div> */}
+                      <Link to="/Dynamic">文章与动态 -&gt;</Link>
                     </div>
                     <div className="xiala">
                       <div>参与活动|成为志愿者</div>

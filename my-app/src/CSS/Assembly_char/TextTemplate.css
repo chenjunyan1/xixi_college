@@ -1,0 +1,10 @@
+.content_zujian{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.content_zujian>div{
+    margin-top: 20px;
+}
+.content_zujian>div>h1{
+    text-align: center;
+}

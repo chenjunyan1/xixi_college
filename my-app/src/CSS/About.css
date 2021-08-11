@@ -5,6 +5,7 @@
     font-size: 55px;
     font-weight:  800;
 }
+
 .guanyuwomen{
     width: 100%;
     height: 200px;
@@ -14,6 +15,7 @@
     background-repeat: no-repeat;
 }
 .guanyuwomen>*{
+    box-shadow: 0 0 0.5em 0 #1d1515;
     width: 100%;
     height: 200px;
     backdrop-filter: blur(3px) brightness(100%);

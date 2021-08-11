@@ -68,6 +68,7 @@
   font-size: 17px;
 }
 .xiala{
+  padding: 3px 3px;
   position:absolute;
   width: fit-content;
   display: none;
@@ -76,8 +77,8 @@
 }
 .xiala>*{
   font-size: 18px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-bottom: 2px solid slategrey;
 }
 .chumo:hover .xiala{
@@ -126,7 +127,7 @@ a:hover{
 
   }
   .xiala{
-    display: inline;
+    display: block;
     position: static;
   }
   .xiala>*{
