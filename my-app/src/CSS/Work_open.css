@@ -1,0 +1,23 @@
+.jianbao{
+
+}
+.Center{
+    /* text-align: center; */
+    font-size: 30px;
+    padding-left: 55px;
+    /* height: auto; */
+}
+.la{
+    transition: 1.25s;
+    overflow: hidden;
+}
+.bao{
+    display: flex;
+}
+.bao>img{
+    width: 40px;
+    margin-left: 10px;
+}
+.bao>div{
+    cursor: pointer;
+}

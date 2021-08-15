@@ -19,7 +19,6 @@ const Volunteer = lazy(() => import('./Assembly/Volunteer_img'));//志愿者招�
 
 let click_on = 1;
 
-
 export default class App extends Component {
   constructor(props){
     super(props);
@@ -121,8 +120,8 @@ export default class App extends Component {
                   </div>
                   <div className="chumo">
                     <div className="se">
-                      <div>信息公开 -&gt;</div>
-                        {/* <Link to="/Work_open">信息公开 -&gt;</Link> */}
+                      {/* <div>信息公开 -&gt;</div> */}
+                        <Link to="/Work_open">信息公开 -&gt;</Link>
                     </div>
                     <div className="xiala">
                       <div>年度报告</div>
@@ -134,6 +133,7 @@ export default class App extends Component {
                   </div>
                   <Link to="/Contact">联系我们</Link>
                   <Link to="/Support">支持我们</Link>
+                  {/* <a href="https://www.lianquan.org/ActivityPlus_ActivityInfo?guid=233923D63B4DD42D610E2EFB60D6519420EBB5D72CAE631B5400D29114178AFE5205FED9EB9A7FCA53AF9360114790D4">支持我们</a> */}
               </div>
               <div className="more" onClick={this.handleClick} style={this.state.more}>
                 <img src="Img/more.svg" alt="" />

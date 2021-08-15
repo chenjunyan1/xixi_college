@@ -1,0 +1,7 @@
+.video_mp4{
+    display: flex;
+    justify-content: center;
+}
+.video_mp4>video{
+    width: 70%;
+}

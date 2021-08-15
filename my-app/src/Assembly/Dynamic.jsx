@@ -14,7 +14,6 @@ export default class Dynamic extends Component {
                         <div>dsasd</div>
                     </div>
                 }/>
-                
             </div>
         )
     }
