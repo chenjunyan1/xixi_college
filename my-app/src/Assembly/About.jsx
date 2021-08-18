@@ -7,7 +7,7 @@ export default class About extends Component {
         return (
             <div>
                 <div className="first">
-                        希希学园
+                北 京 希 希 儿 童 关 爱 中 心 
                 </div>
                 <div className="guanyuwomen">
                     <div>

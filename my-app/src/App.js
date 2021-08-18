@@ -40,7 +40,8 @@ export default class App extends Component {
           click_on = 2;
           this.setState({
             more_style:{
-            display:'flex',
+            height:"1000px",
+            width:"100%"
           },
           daohang:{
             flexDirection: 'column',
@@ -56,7 +57,8 @@ export default class App extends Component {
           click_on = 1;
           this.setState({
             more_style:{
-            display:'none'
+            height:"0px",
+            width:"0px"
           },
           daohang:{
             flexDirection: 'row',
