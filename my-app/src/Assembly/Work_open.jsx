@@ -63,7 +63,7 @@ export default class Work_open extends Component {
                 height: "1px",
             }
         }
-        this.saveRef = ref => { this.refDom = ref };
+        // this.saveRef = ref => { this.refDom = ref };
         // this.handleClick = this.handleClick.bind(thi s);
 
     }

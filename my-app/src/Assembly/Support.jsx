@@ -33,20 +33,20 @@ export default class Support extends Component {
                         }
                     </div>
                     <div>
-                        <img src="//imgcdn.gongyi.qq.com/gongyi/bbd7a4ccf89e29212d70bc9bc3c3cc17c3756596d5649e68a4cf233ebd50a954/500" class="img"></img>
+                        <img src="//imgcdn.gongyi.qq.com/gongyi/bbd7a4ccf89e29212d70bc9bc3c3cc17c3756596d5649e68a4cf233ebd50a954/500"></img>
                         <p className="shouquan">（该图片已获授权）</p>
-                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa237604719d40ad579b97399a9b1620fdaa5ae7687ab888736d/500" class="img"></img>
+                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa237604719d40ad579b97399a9b1620fdaa5ae7687ab888736d/500"></img>
                         <p className="shouquan">（该图片已获授权）</p>
                         <p>课程内容包括：</p>
-                        <img src="Img_Xixi/课程内容.png" class="img"></img>
+                        <img src="Img_Xixi/课程内容.png"></img>
                         <p>接受过性教育的孩子们说： 我终于知道我是怎么来的了！ </p>
-                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa23acf38a7b718975933415f1569f190c641c81fb377287f63e/500" class="img"></img>
+                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa23acf38a7b718975933415f1569f190c641c81fb377287f63e/500"></img>
                         <p className="shouquan">（该图片已获授权）</p>
                         <p>我们一天天长大，身体也一天天发生着变化，男孩和女孩的身体外形出现了一些不同的变化…</p>
-                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa234ad99a2d24d1bcfc8b35fa34a0aa8aad234ac57df994de5c/500" class="img"></img>
+                        <img src="//imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa234ad99a2d24d1bcfc8b35fa34a0aa8aad234ac57df994de5c/500"></img>
                         <p className="shouquan">（该图片已获授权）</p>
-                        <p class="cont">2020-2021学年，我们要继续在民办打工子弟学校开设性教育课程。为3000名流动儿童带去他们需要的性教育，并且会开展第三届性教育绘画赛，请孩子们继续用画笔展示他们对性教育的理解。</p>
-                        <p class="cont">恳请您支持我们，支持流动儿童性教育！&nbsp;&nbsp;</p>
+                        <p>2020-2021学年，我们要继续在民办打工子弟学校开设性教育课程。为3000名流动儿童带去他们需要的性教育，并且会开展第三届性教育绘画赛，请孩子们继续用画笔展示他们对性教育的理解。</p>
+                        <p>恳请您支持我们，支持流动儿童性教育！&nbsp;&nbsp;</p>
                     </div>
                 </div>
                 <div className="choukuan">
