@@ -3,11 +3,11 @@ import '../../CSS/Assembly_char/Briefing.css'
 export default class Briefing extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
         }
     }
-    
+
     render() {
         return (
             <div className="jianbao">

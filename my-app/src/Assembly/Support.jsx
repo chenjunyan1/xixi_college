@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import '../CSS/Support.css';
 import date from '../date.json';
-import Project from'../Assembly/Bacteria_char/Project';
+import Project from '../Assembly/Bacteria_char/Project';
 
 export default class Support extends Component {
     render() {
@@ -53,8 +53,8 @@ export default class Support extends Component {
                     <h1 className="h1_h">项目筹款</h1>
                 </div>
                 <div className="juanzeng">
-                    <Project Img_one={"Img_Xixi/gongyi.png"} Title={"99公益日｜性教育守护流动儿童"} Content={"你将加入一个热心公益、期待为流动儿童性教育作出贡献的线上社群。"} Links={"https://mp.weixin.qq.com/s/bbuXKEQJKvjc6xVtpXlqzA"} yuedu={"查看详情"}  />
-                    <Project Img_one={"http://imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa23acf38a7b718975933415f1569f190c641c81fb377287f63e/500"} Title={"腾讯公益｜性教育守护流动儿童"} Content={"打工子弟学校性教育课程，流动儿童学习性知识、保护自己。"} Links={"https://ssl.gongyi.qq.com/m/weixin/detail.htm?et=fwh_gzh&pid=224166&parent1=68541EAF0D61B9A9F9D3DC8A1AE0CDDE936DF4BE713015D70524742A2B64C51AA5485B279C0294C357FA97E35A535E4D"} yuedu={"查看详情"}  />  
+                    <Project Img_one={"Img_Xixi/gongyi.png"} Title={"99公益日｜性教育守护流动儿童"} Content={"你将加入一个热心公益、期待为流动儿童性教育作出贡献的线上社群。"} Links={"https://mp.weixin.qq.com/s/bbuXKEQJKvjc6xVtpXlqzA"} yuedu={"查看详情"} />
+                    <Project Img_one={"http://imgcdn.gongyi.qq.com/gongyi/acad67b139420fc1f5a64f770313fa23acf38a7b718975933415f1569f190c641c81fb377287f63e/500"} Title={"腾讯公益｜性教育守护流动儿童"} Content={"打工子弟学校性教育课程，流动儿童学习性知识、保护自己。"} Links={"https://ssl.gongyi.qq.com/m/weixin/detail.htm?et=fwh_gzh&pid=224166&parent1=68541EAF0D61B9A9F9D3DC8A1AE0CDDE936DF4BE713015D70524742A2B64C51AA5485B279C0294C357FA97E35A535E4D"} yuedu={"查看详情"} />
                 </div>
             </div>
         )

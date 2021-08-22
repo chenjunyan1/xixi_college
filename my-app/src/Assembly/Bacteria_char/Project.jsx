@@ -9,7 +9,7 @@ export default class Project extends Component {
         this.state = {
         }
     }
-    
+
     render() {
         return (
             <div className="Project_all">

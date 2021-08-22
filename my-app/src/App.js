@@ -71,16 +71,16 @@ export default class App extends Component {
       console.log('none');
     }
   }
-  handleClick_Link = (Link,event) => {
-    const {clientWidth, clientHeight} = this.refDom;
-    if (clientWidth<600) {
+  handleClick_Link = (Link, event) => {
+    const { clientWidth, clientHeight } = this.refDom;
+    if (clientWidth < 600) {
       this.handleClick();
       console.log(event);
     }
     // Route.path = Link;
     // event.target.baseURI+=Link;
     // event.target.firstChild.ownerDocument.URL+=Link;
-    window.location.href='/'+Link;
+    window.location.href = '/' + Link;
   }
   render() {
     return (

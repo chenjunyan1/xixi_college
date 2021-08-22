@@ -1,7 +1,7 @@
 //主页
 
-import React, { Suspense, lazy ,Component} from 'react';
-import { BrowserRouter as Router , Route , Switch , Link } from 'react-router-dom';
+import React, { Suspense, lazy, Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import '../CSS/Home.css';
 
 
@@ -29,8 +29,8 @@ export default class home extends Component {
                         </div>
                         <div>
                             <div className="xiangmu_2">
-                                <Project Img_one={"Img/希希学园项目用图.jpg"} Title={"希希学园"} Content={"致力于为儿童提供全方位的全面性教育，帮助他们掌握科学、正确的性健康知识，形成积极的情感态度价值观，健康、快乐成长。"} Links={"https://xixi-college.vercel.app/"} yuedu={"阅读全文"}  />
-                                <Project Img_one={"Img/悦读悦成长项目图.jpg"} Title={"悦读悦成长"} Content={"是为基层居民提供读书、学习的场所，是传播精神文明的阵地"}Links={"https://chongxi-library.vercel.app/"} yuedu={"阅读全文"} />
+                                <Project Img_one={"Img/希希学园项目用图.jpg"} Title={"希希学园"} Content={"致力于为儿童提供全方位的全面性教育，帮助他们掌握科学、正确的性健康知识，形成积极的情感态度价值观，健康、快乐成长。"} Links={"https://xixi-college.vercel.app/"} yuedu={"阅读全文"} />
+                                <Project Img_one={"Img/悦读悦成长项目图.jpg"} Title={"悦读悦成长"} Content={"是为基层居民提供读书、学习的场所，是传播精神文明的阵地"} Links={"https://chongxi-library.vercel.app/"} yuedu={"阅读全文"} />
                             </div>
                         </div>
                         <div>
@@ -40,7 +40,7 @@ export default class home extends Component {
                     <Suspense>
                         <Switch>
                             <Route path="/\Xixi">
-                                <Xixi_nei/>
+                                <Xixi_nei />
                             </Route>
                         </Switch>
                     </Suspense>

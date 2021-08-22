@@ -5,49 +5,49 @@ import '../CSS/Volunteer.css';
 
 let ImgRecruit_arr = [];
 for (let n = 0; n < 64; n++) {
-    ImgRecruit_arr[n] = "幻灯片"+(n+1)+".PNG";    
+    ImgRecruit_arr[n] = "幻灯片" + (n + 1) + ".PNG";
 }
 
 export default class Volunteer extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
-          img:{
-              width:'25%'
-          },
-          src:'Img/Fang_da.svg',
+        this.state = {
+            img: {
+                width: '25%'
+            },
+            src: 'Img/Fang_da.svg',
         }
-    
+
         this.handleClick = this.handleClick.bind(this);
 
-      }
+    }
 
-      handleClick(e){
+    handleClick(e) {
         e.preventDefault();
         if (this.state.img.width == '25%') {
             this.setState({
-                img:{
-                    width:'50%',
+                img: {
+                    width: '50%',
                 },
-                src:'Img/Fang_da.svg',
+                src: 'Img/Fang_da.svg',
             })
-        }else if (this.state.img.width == '50%') {
+        } else if (this.state.img.width == '50%') {
             this.setState({
-                img:{
-                    width:'100%',
+                img: {
+                    width: '100%',
                 },
-                src:'Img/Suo_xiao.svg',
+                src: 'Img/Suo_xiao.svg',
 
             })
-        }else if (this.state.img.width == '100%') {
+        } else if (this.state.img.width == '100%') {
             this.setState({
-                img:{
-                    width:'25%',
+                img: {
+                    width: '25%',
                 },
-                src:'Img/Fang_da.svg',
+                src: 'Img/Fang_da.svg',
             })
         }
-      }
+    }
 
     render() {
         return (
@@ -63,9 +63,9 @@ export default class Volunteer extends Component {
                 </div>
                 <div className="Volunteer_img">
                     {
-                        ImgRecruit_arr.map((name,index) => {
-                            return(
-                                <img  style={this.state.img} key={index+name} src={"ImgRecruit/"+ImgRecruit_arr[index]} alt="希希学园志愿者招募" />
+                        ImgRecruit_arr.map((name, index) => {
+                            return (
+                                <img style={this.state.img} key={index + name} src={"ImgRecruit/" + ImgRecruit_arr[index]} alt="希希学园志愿者招募" />
                             )
                         })
                     }
