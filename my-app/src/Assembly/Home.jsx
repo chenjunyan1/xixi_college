@@ -1,7 +1,6 @@
 //主页
 
 import React, { Suspense, lazy, Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import '../CSS/Home.css';
 
 
@@ -13,7 +12,6 @@ export default class home extends Component {
     render() {
         return (
             <div>
-                <Router>
                     <br />
                     <hr />
                     <br />
@@ -33,18 +31,9 @@ export default class home extends Component {
                                 <Project Img_one={"Img/悦读悦成长项目图.jpg"} Title={"悦读悦成长"} Content={"是为基层居民提供读书、学习的场所，是传播精神文明的阵地"} Links={"https://chongxi-library.vercel.app/"} yuedu={"阅读全文"} />
                             </div>
                         </div>
-                        <div>
-                            <Link to="/Xixi">希希学园介绍</Link>
-                        </div>
+
                     </div>
-                    <Suspense>
-                        <Switch>
-                            <Route path="/\Xixi">
-                                <Xixi_nei />
-                            </Route>
-                        </Switch>
-                    </Suspense>
-                </Router>
+                    
             </div>
 
         )

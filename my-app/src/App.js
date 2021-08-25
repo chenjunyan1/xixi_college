@@ -76,11 +76,15 @@ export default class App extends Component {
     if (clientWidth < 600) {
       this.handleClick();
       console.log(event);
+      setTimeout(() => {
+        window.location.href = '/' + Link;
+      }, 1000)
+    } else {
+      window.location.href = '/' + Link;
     }
     // Route.path = Link;
     // event.target.baseURI+=Link;
     // event.target.firstChild.ownerDocument.URL+=Link;
-    window.location.href = '/' + Link;
   }
   render() {
     return (

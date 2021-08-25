@@ -20,7 +20,7 @@
 }
 .jianbao:hover{
     transition: all 1s;
-
+    cursor: pointer;
     /* background-size: cover; */
 
     font-weight: 300;
