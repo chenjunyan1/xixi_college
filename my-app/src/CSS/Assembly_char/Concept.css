@@ -1,0 +1,23 @@
+.Concept_img{
+    width: 30px;
+}
+.Concept{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    /* background-color: royalblue; */
+}
+.Concept>div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Concept>div:first-child>*{
+    border-radius: 10px;
+}
+
+.Concept{
+}

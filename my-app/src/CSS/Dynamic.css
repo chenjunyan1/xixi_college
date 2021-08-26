@@ -1,11 +1,28 @@
+.wenzhangyudongtai{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:18px;
+    background-color: rgba(0,0,0,0.1);
+}
+
 img{
     width: Calc(100% - 40%);
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+.img_2{
+    width: Calc(100% - 80%);
+    margin-left: 40%;
+    margin-right: 40%;
 }
 p{
     text-indent: 48px;
 }
 .juzhong{
     text-align: center;
+    border-bottom:royalblue;
+}
+.kaoyou{
+    text-align: right;
 }
