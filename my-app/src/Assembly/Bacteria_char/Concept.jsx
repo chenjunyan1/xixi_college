@@ -16,11 +16,18 @@ export default class Concept extends Component {
         return (
             <div className="Concept" style={sty_back}>
                 <div>
-                    <div>{this.props.title}</div>
+                    <div>
+                        <div>
+                            {this.props.title}
+                        </div>
+                    </div>
                     <img className="Concept_img" src="Img/Logo_img.png" alt="" />
                 </div>
                 <div>
-                    {this.props.arr_list}
+                    <ol>
+                        {this.props.arr_list}
+
+                    </ol>
                 </div>
             </div>
         )

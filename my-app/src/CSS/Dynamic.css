@@ -4,8 +4,7 @@
     font-size:18px;
     background-color: rgba(0,0,0,0.1);
 }
-
-img{
+.img_1{
     width: Calc(100% - 40%);
     margin-left: 20%;
     margin-right: 20%;
@@ -15,6 +14,8 @@ img{
     width: Calc(100% - 80%);
     margin-left: 40%;
     margin-right: 40%;
+    border-radius: 10px;
+
 }
 p{
     text-indent: 48px;
@@ -25,4 +26,23 @@ p{
 }
 .kaoyou{
     text-align: right;
+}
+
+.gainian{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.gainian>*{
+    margin: 10px;
+    /* box-shadow: 0 0 0.5em 0 #c6ffdd; */
+}
+ul{
+    border-radius: 20px;
+    /* padding: 10px; */
+    background-image: url(../Background_img/honglan.jpg);
+}
+ol{
+
 }

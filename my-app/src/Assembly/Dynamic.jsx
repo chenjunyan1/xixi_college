@@ -2,7 +2,8 @@
 //文章与动态
 import React, { Suspense, lazy, Component } from 'react';
 import '../CSS/Dynamic.css';
-import Concept from '../Assembly/Bacteria_char/Concept'
+import Concept from '../Assembly/Bacteria_char/Concept';
+import Date from '../date.json';
 const TextTemplate = lazy(() => import('../Assembly/Bacteria_char/TextTemplate'));
 export default class Dynamic extends Component {
     render() {
@@ -16,14 +17,14 @@ export default class Dynamic extends Component {
                                 这群儿童就是人们熟知的是“留守儿童”，其中有一些跟随父母进入城市，成为“流动儿童”，规模约为3491万，数量庞大，却常常被忽略（新公民计划，2020）。
                                 因为一些客观条件限制，许多流动儿童无法获得足够优质的教育资源，特别是在性教育方面。
                             </p>
-                            <img src="IMG_Xixi/500.jpg" alt="" />
+                            <img className="img_1" src="IMG_Xixi/500.jpg" alt="" />
                             <p>
                                 希希学园，从2014年开始关注在北京的流动儿童，致力于为他们提供优质的性教育资源。
                                 2016年，北京希希儿童关爱中心在北京市民政局注册为民办非企业。
                                 在过去的六年中，希希学园每年都会支持十几所打工子弟学校开设性教育课程，每年都可以使上万人受益。
                             </p>
                             <div>
-                                <img src="Img_Xixi/课程内容.png" alt="课程内容" />
+                                <img className="img_1" src="Img_Xixi/课程内容.png" alt="课程内容" />
                                 <div className="juzhong">
                                     希希学园性教育课程内容
                                 </div>
@@ -50,7 +51,7 @@ export default class Dynamic extends Component {
                             <ul>
                                 传播志愿者
                                 <li>每周撰写一篇与性教育相关的知识性文章</li>
-                                <li>推荐绘本，并录音或者制作图文视频，形式参考公众号中《绘本分享》内容，发送到<a href="mailto:xxxy@xingongmin.org.cn">xxxy@xingongmin.org.cn </a></li>
+                                <li>推荐绘本，并录音或者制作图文视频，形式参考公众号中《绘本分享》内容，发送到<a style={{ color: "red",textDecoration:"underline" }} href="mailto:xxxy@xingongmin.org.cn">xxxy@xingongmin.org.cn </a></li>
                                 <li>微信、微博的日常运营</li>
                             </ul>
                             <ul>
@@ -126,8 +127,22 @@ export default class Dynamic extends Component {
                                 </div>
                             } />
                             <TextTemplate title={"全面性教育关键概念"} content={
-                                <div>
-                                    <Concept title={"dd"} arr_list={"es"} />
+                                <div className="gainian">
+                                    {
+                                        Date.Gainian_list.map((item, index) => {
+                                            return (
+                                                <Concept key={index + item} title={Date.Gainian_list[index][0]}
+                                                    arr_list={
+                                                        Date.Gainian_list[index][1].map((item_2, index_2) => {
+                                                            return (
+                                                                <li key={item_2 + index_2}>{item_2}</li>
+                                                            )
+                                                        })
+                                                    }
+                                                />
+                                            )
+                                        })
+                                    }
                                 </div>
                             } />
                         </div>
