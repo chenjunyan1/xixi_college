@@ -72,14 +72,18 @@ export default class App extends Component {
     }
   }
   handleClick_Link = (Link, event) => {
+    // const href = window.location.origin + window.location.hash;
     const { clientWidth, clientHeight } = this.refDom;
     if (clientWidth < 600) {
       this.handleClick();
       console.log(event);
       setTimeout(() => {
+        // window.history.pushState({}, 0, href);
         window.location.href = '/' + Link;
-      }, 1000)
+      }, 1000);
     } else {
+      // window.history.pushState({}, 0, href);
+
       window.location.href = '/' + Link;
     }
     // Route.path = Link;
