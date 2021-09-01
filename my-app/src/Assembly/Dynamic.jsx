@@ -5,6 +5,7 @@ import '../CSS/Dynamic.css';
 import Concept from '../Assembly/Bacteria_char/Concept';
 import Date from '../date.json';
 const TextTemplate = lazy(() => import('../Assembly/Bacteria_char/TextTemplate'));
+const Img = lazy(() => import('../Assembly/Bacteria_char/Img'))
 export default class Dynamic extends Component {
     render() {
         return (
@@ -51,7 +52,7 @@ export default class Dynamic extends Component {
                             <ul>
                                 传播志愿者
                                 <li>每周撰写一篇与性教育相关的知识性文章</li>
-                                <li>推荐绘本，并录音或者制作图文视频，形式参考公众号中《绘本分享》内容，发送到<a style={{ color: "red",textDecoration:"underline" }} href="mailto:xxxy@xingongmin.org.cn">xxxy@xingongmin.org.cn </a></li>
+                                <li>推荐绘本，并录音或者制作图文视频，形式参考公众号中《绘本分享》内容，发送到<a style={{ color: "red", textDecoration: "underline" }} href="mailto:xxxy@xingongmin.org.cn">xxxy@xingongmin.org.cn </a></li>
                                 <li>微信、微博的日常运营</li>
                             </ul>
                             <ul>
@@ -149,6 +150,33 @@ export default class Dynamic extends Component {
 
                     </div>
                 } />
+                <Suspense fallback={
+                    <div>
+                        loading.....
+                    </div>
+                }>
+                    <TextTemplate title={"img"} content={
+                        <div>
+                            {
+                                Object.keys(Date.imgLink).map((value) => {
+                                    return (
+                                        <TextTemplate key={value} title={Date.imgLink[value].name} content={
+                                            <div className="xiangmu-img">
+                                                {
+                                                    Date.imgLink[value].Link.map((item, index) => {
+                                                        return (
+                                                            <Img key={item+index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"hello" + index} />
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        } />
+                                    )
+                                })
+                            }
+                        </div>
+                    } />
+                </Suspense>
             </div>
         )
     }

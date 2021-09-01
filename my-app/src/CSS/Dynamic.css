@@ -46,6 +46,12 @@ ul{
     /* padding: 10px; */
     background-image: url(../Background_img/honglan.jpg);
 }
-ol{
-
+.xiangmu-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.xiangmu-img>*{
+    margin: 10px;
 }
