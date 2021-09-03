@@ -3,6 +3,7 @@
     padding-right: 20px;
     font-size:18px;
     background-color: rgba(0,0,0,0.1);
+
 }
 .img_1{
     width: Calc(100% - 40%);
@@ -51,7 +52,18 @@ ul{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #dcedc2;
+    border-radius: 30px 30px 30px 30px;
+
 }
 .xiangmu-img>*{
     margin: 10px;
+}
+
+.xiangmuji_img{
+    border-radius: 50px 50px 0px 0px;
+    /* margin-left: -20px;
+    margin-right: -20px; */
 }

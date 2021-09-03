@@ -96,7 +96,7 @@ export default class Work_open extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div id="jianbao">
                     <div className="bao">
                         <img src="Img_Xixi/Bao.svg" alt="" />
                         <div className="Center" onClick={this.handleClick.bind(this, date_riqi.length)}>工作简报 点击查看  - &gt;</div>
@@ -111,7 +111,7 @@ export default class Work_open extends Component {
                         }
                     </div>
                 </div>
-                <div>
+                <div id="baogao">
                     {/* <div className="Center">年度审计报告</div> */}
                     <div className="bao">
                         <img src="Img_Xixi/Bao.svg" alt="" />
@@ -128,7 +128,7 @@ export default class Work_open extends Component {
                     </div>
                 </div>
                 {/* event.target.parentElement.parentElement.children[1] */}
-                <div>
+                <div id="zhengshu">
                     {/* <div className="Center" >年检证书</div> */}
                     <div className="bao">
                         <img src="Img_Xixi/Bao.svg" alt="" />

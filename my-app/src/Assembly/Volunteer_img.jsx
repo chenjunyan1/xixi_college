@@ -9,10 +9,10 @@ export default class Volunteer_img extends Component {
                 <div>
                     <hr />
                     <div className="xingjiaoyu">
-                        <h1>性教育守护流动儿童</h1>
+                        <h1 id="yuanqi">性教育守护流动儿童</h1>
                     </div>
                     <div>
-                        <h1>项目缘起</h1>
+                        <h1 id="yuanqi">项目缘起</h1>
                         <hr />
                         <br />
                         <div className="sikao">
@@ -45,7 +45,7 @@ export default class Volunteer_img extends Component {
                         <br />
                     </div>
                     <div>
-                        <h1>希希学园介绍</h1>
+                        <h1 id="jieshao">希希学园介绍</h1>
                         <hr />
                         <br />
                         <div className="Erect">
@@ -127,7 +127,7 @@ export default class Volunteer_img extends Component {
                         <br />
                     </div>
                     <div>
-                        <h1>谁是流动儿童?</h1>
+                        <h1 id="ertong">谁是流动儿童?</h1>
                         <hr />
                         <br />
                         <div className="Erect shei">
@@ -186,7 +186,7 @@ export default class Volunteer_img extends Component {
                         <br />
                     </div>
                     <div>
-                        <h1>机构发展历程</h1>
+                        <h1 id="fazhan">机构发展历程</h1>
                         <hr />
                         <br />
                         <div className="fazhan Erect">
@@ -240,7 +240,7 @@ export default class Volunteer_img extends Component {
                         <h1>愿景</h1>
                         <hr />
                         <br />
-                        <div className="yuanjing">
+                        <div id="yuanjing" className="yuanjing">
                             <div>
                                 每个孩子在成长过程中都可以接受到
                                 适合其年龄、认知水平的全面性教育，
@@ -308,7 +308,7 @@ export default class Volunteer_img extends Component {
                         <br />
                     </div>
                     <div>
-                        <h1>项目产出</h1>
+                        <h1 id="jinzhan">项目产出</h1>
                         <hr />
                         <br />
                         <div className="chanchu">

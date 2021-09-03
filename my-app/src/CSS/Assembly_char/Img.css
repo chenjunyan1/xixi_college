@@ -2,12 +2,15 @@
     width: 320px;
     height: 250px;
     border-radius: 20px;
-    background-color: darkseagreen;
+    background-color: #ffd3b5;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
 }
+/* .Img-zujian>div:first-child>div>img:hover{
+    transform: scale(1.2);
+} */
 .Img-zujian>div{
     display: flex;
     justify-content: center;
@@ -18,11 +21,28 @@
     height: 170px;
     overflow: hidden;
     border-radius: 20px;
-
 }
 .Img-zujian>div:first-child>div>img{
+    transition: all 1s;
     width:300px;
     height: 170px;
     border-radius: 20px;
     object-fit: cover;
 }
+.Img-zujian>div:nth-child(2)>*{
+    user-select: none;
+    cursor: pointer;
+    height: 30px;
+    background-color: #ffaaa6;
+    color: #878ecd;
+    border-radius: 10px;
+    width: calc(100% - 20%);
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    letter-spacing: 1px;
+}
+.Img-zujian>div:nth-child(2)>*:hover{
+    letter-spacing: 4px;
+}
+

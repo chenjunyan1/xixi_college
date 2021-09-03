@@ -6,11 +6,12 @@ import Concept from '../Assembly/Bacteria_char/Concept';
 import Date from '../date.json';
 const TextTemplate = lazy(() => import('../Assembly/Bacteria_char/TextTemplate'));
 const Img = lazy(() => import('../Assembly/Bacteria_char/Img'))
+
 export default class Dynamic extends Component {
     render() {
         return (
             <div className="wenzhangyudongtai">
-                <TextTemplate title={"希希学园志愿者招募"} content={
+                <TextTemplate  id="canyu" title={"希希学园志愿者招募"} content={
                     <div>
                         <div>
                             <p>
@@ -65,14 +66,15 @@ export default class Dynamic extends Component {
                                 <li>认识志同道合的朋友。认识一群与你同样有理想、有情怀、有行动力的朋友们。</li>
                                 <li>做了一件有意义的事。你讲授的知识将会帮助到更多的孩子，有效地避免他们被伤害或是伤害他人，推动了一个更包容更多元更美好的社会的进程。</li>
                             </ul>
-                            <img className="img_2" src="Img_Xixi/640.webp" alt="" />
+                            <img className="img_2" src="Img_Xixi/liusiling.webp" alt="" />
                             <div className="juzhong">
                                 长按图片，打开名片，添加“希希学园-儿童性教育”为好友
                             </div>
-                            <p>
-                                无论你想用以上哪种方式参与到流动儿童性教育这份事业之中，都可以添加“xixixueyuan2”为微信好友，注明“志愿者申请/了解希希学园”，了解更多有关流动儿童性教育的资讯。
+                            <p id="yanjiu">
+                                无论你想用以上哪种方式参 与到流动儿童性教育这份事业之中，都可以添加“xixixueyuan2”为微信好友，注明“志愿者申请/了解希希学园”，了解更多有关流动儿童性教育的资讯。
                             </p>
-                            <TextTemplate title={"全面性教育"} content={
+                            <p id="lingyu"></p>
+                            <TextTemplate id="lingyu" title={"全面性教育"} content={
                                 <div>
                                     <ul>
                                         <li>
@@ -150,22 +152,28 @@ export default class Dynamic extends Component {
 
                     </div>
                 } />
+                <p id="wangqi"></p>
+
                 <Suspense fallback={
                     <div>
                         loading.....
                     </div>
                 }>
-                    <TextTemplate title={"img"} content={
-                        <div>
+
+                    <TextTemplate id="wangqi"  title={"往期活动照片"} content={
+                        <div className="xiangmuji_img">
                             {
                                 Object.keys(Date.imgLink).map((value) => {
+                                    console.log(value)
                                     return (
                                         <TextTemplate key={value} title={Date.imgLink[value].name} content={
                                             <div className="xiangmu-img">
                                                 {
                                                     Date.imgLink[value].Link.map((item, index) => {
+                                                        console.log(Date.imgLink[value].name);
+                                                        console.log(item)
                                                         return (
-                                                            <Img key={item+index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"hello" + index} />
+                                                            <Img key={item+index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"click_img" + index} />
                                                         )
                                                     })
                                                 }
