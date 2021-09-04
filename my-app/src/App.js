@@ -37,13 +37,13 @@ export default class App extends Component {
   // 过度锚点
   scrollToAnchor = (anchorName, Link, event) => {
 
-    console.log("开始寻找ID:" + anchorName)
+    console.log("在本页面开始寻找ID:" + anchorName)
     if (anchorName) {
-      const { clientWidth, clientHeight } = this.refDom;
+      const { clientWidth } = this.refDom;
 
       let anchorElement = document.getElementById(anchorName);
       if (anchorElement) {
-        console.log("找到" + anchorName + "锚点了")
+        console.log("找到" + anchorName + "锚点了,正在前往")
         if (clientWidth < 600) {
           this.handleClick();
           setTimeout(() => {
@@ -54,7 +54,7 @@ export default class App extends Component {
         }
       } else {
         this.handleClick_Link(Link, event);
-        console.log("本页面没找到ID:" + anchorName);
+        console.log("本页面没找到ID:" + anchorName + "将前往" + Link);
       }
     }
   }

@@ -23,7 +23,8 @@ export default class Dynamic extends Component {
         return (
             <div className="wenzhangyudongtai">
                 <div style={sty}></div>
-                <TextTemplate id="canyu" title={"希希学园志愿者招募"} content={
+                <div id="canyu"></div>
+                <TextTemplate title={"希希学园志愿者招募"} content={
                     <div>
                         <div>
                             <p>
