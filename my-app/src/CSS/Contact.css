@@ -1,0 +1,47 @@
+.lianxi_bg>div{
+    /* padding-left: 20px; */
+    color: lightcoral;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+}
+.lianxi_me{
+    display: flex;
+    flex-direction: column;
+}
+.lianxi_me>ul>li>img{
+    width: 82px;
+    text-align: center;
+}
+.lianxi_me>div>img{
+    width:calc(100% - 150px);
+    border-radius:20px;
+
+    
+}
+.lianxi_me>div{
+    display: flex;
+    justify-content: center;
+}
+.lianxi_me>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 110px;
+    align-items: center;
+    background: tomato;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+.lianxi_me>ul>li{
+
+}
+.lianxi_me>ul>li>div:first-child{
+    font-size: 23px;
+    font-weight: 900;
+}
+.lianxi_me>ul>li>div:nth-child(2){
+    user-select:all;
+}

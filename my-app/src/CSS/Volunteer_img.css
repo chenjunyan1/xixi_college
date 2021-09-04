@@ -290,7 +290,7 @@ h1{
     justify-content: space-around;
     font-size: 27px;
     font-weight: 700;
-
+    flex-wrap: wrap;
 }
 .chanchu>div>*{
     width: 250px;
