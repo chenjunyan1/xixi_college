@@ -205,14 +205,14 @@ export default class App extends Component {
             </header>}>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/Brief_Introduction" component={Volunteer} />
-              <Route path="/About" component={About} />
-              <Route path="/Contact" component={Contact} />
-              <Route path="/Dynamic" component={Dynamic} />
-              <Route path="/Support" component={Support} />
-              <Route path="/Work_open" component={Work_open} />
-              <Route path="/ActivityPhotos" component={ActivityPhotos} />
-              <Route path="/Volunteer" component={Volunteer} />
+              <Route exact path="/Brief_Introduction" component={Volunteer} />
+              <Route exact path="/About" component={About} />
+              <Route exact path="/Contact" component={Contact} />
+              <Route exact path="/Dynamic" component={Dynamic} />
+              <Route exact path="/Support" component={Support} />
+              <Route exact path="/Work_open" component={Work_open} />
+              <Route exact path="/ActivityPhotos" component={ActivityPhotos} />
+              <Route exact path="/Volunteer" component={Volunteer} />
               {/* <Route path='/Xixi_nei' component={Xixi_nei} /> */}
               {/* 404以上页面都没有找到，就显示404页面 */}
               <Route component={Img_404} />
