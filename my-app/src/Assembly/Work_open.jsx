@@ -94,8 +94,20 @@ export default class Work_open extends Component {
     }
 
     render() {
+        let sty = {
+            height: "calc(100vh - 300px)",
+            backgroundImage: "url('Xixi_img/06项目照片/孩子们的画-新公民计划-课题组扫描-20161004/万晶晶-新希望学校-五二班-一等奖.jpg')",
+            width: "100%",
+            backgroundSize: "114%",
+            backgroundPosition: "center right",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            alignItems: "center",
+            borderRadius: "20px"
+        }
         return (
             <div>
+                <div style={sty}></div>
                 <div id="jianbao">
                     <div className="bao">
                         <img src="Img_Xixi/Bao.svg" alt="" />

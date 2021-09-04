@@ -9,9 +9,21 @@ const Img = lazy(() => import('../Assembly/Bacteria_char/Img'))
 
 export default class Dynamic extends Component {
     render() {
+        let sty = {
+            height: "250px",
+            backgroundImage: "url('Xixi_img/06项目照片/孩子们的画-新公民计划-课题组扫描-20161004/赵帅-二二班-三等奖.jpg')",
+            width: "100%",
+            backgroundSize: "114%",
+            backgroundPosition: "center right",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            alignItems: "center",
+            borderRadius: "20px"
+        }
         return (
             <div className="wenzhangyudongtai">
-                <TextTemplate  id="canyu" title={"希希学园志愿者招募"} content={
+                <div style={sty}></div>
+                <TextTemplate id="canyu" title={"希希学园志愿者招募"} content={
                     <div>
                         <div>
                             <p>
@@ -160,7 +172,7 @@ export default class Dynamic extends Component {
                     </div>
                 }>
 
-                    <TextTemplate id="wangqi"  title={"往期活动照片"} content={
+                    <TextTemplate id="wangqi" title={"往期活动照片"} content={
                         <div className="xiangmuji_img">
                             {
                                 Object.keys(Date.imgLink).map((value) => {
@@ -173,7 +185,7 @@ export default class Dynamic extends Component {
                                                         console.log(Date.imgLink[value].name);
                                                         console.log(item)
                                                         return (
-                                                            <Img key={item+index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"click_img" + index} />
+                                                            <Img key={item + index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"click_img" + index} />
                                                         )
                                                     })
                                                 }
