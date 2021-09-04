@@ -54,9 +54,9 @@ export default class App extends Component {
         }
       } else {
         this.handleClick_Link(Link, event);
+        console.log("本页面没找到ID:" + anchorName);
       }
     }
-    console.log("本页面没找到ID:" + anchorName);
   }
 
   handleClick() {
