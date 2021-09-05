@@ -1,4 +1,5 @@
 .jianbao{
+    transition: 2s;
     width: calc(100% - 20px);
     height: 80px;
     /* height: auto; */
@@ -38,4 +39,14 @@
 
 .jianbao>*>div:first-child>div:first-child{
     margin-right: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .jianbao{
+        font-size: 15px;
+    }
+    .jianbao>div>div:first-child>div:nth-child(2){
+        padding-right: 10px;
+    }
+    
 }

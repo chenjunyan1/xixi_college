@@ -23,7 +23,7 @@ h1{
     background: brown;
 }
 .sikao{
-    font-size: 30px;
+    font-size: 20px;
     font-weight:900;
     margin-left: 15px;
 }
@@ -36,6 +36,7 @@ h1{
     justify-content: space-evenly;
 }
 .Beijing>*{
+    transition: 2s;
     width: 100%;
     text-align: center;
     padding-top: 20px;
@@ -268,6 +269,7 @@ h1{
 }
 
 .shiming>div>div>img{
+    transition: 2s;
     height: 300px;
     border-radius: 20px;
     margin-right: 20px;
@@ -293,6 +295,7 @@ h1{
     flex-wrap: wrap;
 }
 .chanchu>div>*{
+    transition: 2s;
     width: 250px;
     height: 400px;
     text-align: center;
@@ -307,4 +310,81 @@ h1{
 .chanchu>*>*>*>img{
     border-radius: 37px;
     box-shadow: 0 0 0.5em 0 #1d1515;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .kecheng>div>div>* {
+        width: 148px;
+    }
+    .Beijing>* {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .xuexiao>*>div {
+        width: auto;
+    }
+    .shiming{
+        display: flex;
+        justify-content: center;
+    }
+    .shiming>div{
+        flex-direction: column;
+    }
+    .kecheng>div>div:nth-child(2n+1)>* {
+        padding:0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kecheng>div {
+        display: flex;
+        flex-direction: column;
+    }
+    .shiming>div>:nth-child(2) {
+        /* padding-top: 30px; */
+        width: auto;
+    }
+    .kecheng>div>div:nth-child(2n+1)>* {
+        font-size: 7px;
+    }
+    .shiming>div>div>img {
+        height: 269px;
+        margin-right: 0px;
+    }
+    .shiming>div>div:first-child{
+        display: flex;
+        justify-content: center;
+    }
+    .linian>div{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* justify-content: center; */
+    }
+    .linian>div>* {
+         width: auto;
+         margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .linian>div>*{
+        border-right: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+
+    }
+    .shei>div>* {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .fazhan {
+        font-size: 13px;
+    }
+    .Beijing_2>* {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .chanchu>div>*{
+        height: 283px;
+    }
 }

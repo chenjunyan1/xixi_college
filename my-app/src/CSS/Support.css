@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
 }
+.video_mp4>*{
+    border-radius: 50px;
+    border: dotted;
+}
 .vid_p{
     padding:20px;
     text-indent: 48px;
@@ -57,4 +61,13 @@
 .choukuan{
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .h1_h{
+        letter-spacing:0px;
+    }
+    .h1_h:hover{
+        letter-spacing:0px;
+    }
 }

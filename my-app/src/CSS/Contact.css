@@ -45,3 +45,11 @@
 .lianxi_me>ul>li>div:nth-child(2){
     user-select:all;
 }
+
+
+@media screen and (max-width: 800px) {
+    .lianxi_me>ul{
+        flex-direction: column;
+        height: 370px;
+    }
+}

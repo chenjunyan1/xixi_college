@@ -95,7 +95,7 @@ export default class Work_open extends Component {
 
     render() {
         let sty = {
-            height: "calc(100vh - 300px)",
+            height: "calc(100vh - 400px)",
             backgroundImage: "url('Xixi_img/06项目照片/孩子们的画-新公民计划-课题组扫描-20161004/万晶晶-新希望学校-五二班-一等奖.jpg')",
             width: "100%",
             backgroundSize: "114%",
@@ -116,7 +116,7 @@ export default class Work_open extends Component {
                     <div className="la" ref={this.saveRef} style={this.state.sty}>
                         {
                             date_riqi.map((item, index) => {
-                                return (
+                                return (    
                                     <Briefing key={item + index} num={date_riqi.length - index} title={"希希学园" + item + "工作简报"} Link={Link_arr[index]} />
                                 )
                             })
