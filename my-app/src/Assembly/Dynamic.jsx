@@ -177,14 +177,14 @@ export default class Dynamic extends Component {
                         <div className="xiangmuji_img">
                             {
                                 Object.keys(Date.imgLink).map((value) => {
-                                    console.log(value)
+                                    // console.log(value)
                                     return (
                                         <TextTemplate key={value} title={Date.imgLink[value].name} content={
                                             <div className="xiangmu-img">
                                                 {
                                                     Date.imgLink[value].Link.map((item, index) => {
-                                                        console.log(Date.imgLink[value].name);
-                                                        console.log(item)
+                                                        // console.log(Date.imgLink[value].name);
+                                                        // console.log(item)
                                                         return (
                                                             <Img key={item + index} IMG_src={"Xixi_img/06项目照片/" + Date.imgLink[value].name + "/" + item} title={"click_img" + index} />
                                                         )

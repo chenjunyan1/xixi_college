@@ -1,6 +1,7 @@
 //联系我们
 import React, { Component } from 'react'
 import '../CSS/Contact.css'
+import Map from './Bacteria_char/Map'
 export default class Contact extends Component {
     constructor(props) {
         super(props)
@@ -34,7 +35,7 @@ export default class Contact extends Component {
                         <ul>
                             <li>
                                 <div>地址</div>
-                                <div>北京东城区崇文门</div>
+                                <div>北京市崇文门西大街社区</div>
                             </li>
                             <li>
                                 <div>电子邮箱</div>
@@ -51,9 +52,11 @@ export default class Contact extends Component {
                             </li>
                         </ul>
                         <div>
-                            <img src="Img_Xixi/home.png" alt="" />
+                            <Map />
                         </div>
                     </div>
+                </div>
+                <div>
                 </div>
             </div>
         )

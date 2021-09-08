@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import '../../CSS/Assembly_char/Concept.css'
+import Map from './Map'
+
 export default class Concept extends Component {
     constructor(props) {
         super(props)
@@ -28,6 +30,9 @@ export default class Concept extends Component {
                         {this.props.arr_list}
 
                     </ol>
+                </div>
+                <div>
+                    <Map/>
                 </div>
             </div>
         )

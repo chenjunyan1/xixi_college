@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import '../CSS/Support.css';
 import date from '../date.json';
 import Project from '../Assembly/Bacteria_char/Project';
-
 export default class Support extends Component {
     render() {
         return (
