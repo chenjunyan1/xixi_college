@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import '../CSS/Contact.css'
 import Map from './Bacteria_char/Map'
-import Weather from './Bacteria_char/Weather'
 export default class Contact extends Component {
     constructor(props) {
         super(props)
@@ -55,9 +54,6 @@ export default class Contact extends Component {
                             <Map />
                         </div>
                     </div>
-                </div>
-                <div>
-                    <Weather/>
                 </div>
             </div>
         )
