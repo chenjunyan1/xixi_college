@@ -95,6 +95,11 @@ export default class App extends Component {
       console.log('none');
     }
   }
+  xiangshang=() =>{
+    console.log("向上")
+    let anchorElement = document.getElementById("shang_home");
+    anchorElement.scrollIntoView({ behavior: "smooth"});
+  }
   handleClick_Link = (Link, event) => {
     // const href = window.location.origin + window.location.hash;
     const { clientWidth, clientHeight } = this.refDom;
@@ -120,7 +125,7 @@ export default class App extends Component {
     return (
       <Router>
         <div ref={this.saveRef}>
-          <div className="zong">
+          <div id="shang_home" className="zong">
             <div className="daohanglan" style={this.state.daohang}>
               <div className="zuo">
                 <img className="xixi_logo" src="Img/Logo_img.png" alt="希希学院" />
@@ -197,6 +202,9 @@ export default class App extends Component {
                 <img src="Img/more.svg" alt="" />
               </div>
             </div>
+            <div>
+              <img onClick={this.xiangshang.bind(this)} className="Home_img" src="Img/shang_home.svg" alt="" />
+            </div> 
           </div>
           <Suspense fallback={
             <header className="App-header">

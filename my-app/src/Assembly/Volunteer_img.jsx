@@ -302,7 +302,6 @@ export default class Volunteer_img extends Component {
                                     <div>通过社工培训等方式支持流动人口社区推广家庭性教育。</div>
                                 </div>
                             </div>
-
                         </div>
                         <br />
                         <br />
