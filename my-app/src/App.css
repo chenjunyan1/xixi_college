@@ -72,6 +72,7 @@
 .you{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .you>*{
   padding-left: 20px;

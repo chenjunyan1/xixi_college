@@ -113,7 +113,6 @@ export default class App extends Component {
       }, 1000);
     } else {
       // window.history.pushState({}, 0, href);
-
       window.location.href = '/' + Link;
     }
     // Route.path = Link;
@@ -166,7 +165,6 @@ export default class App extends Component {
                     {/* <div>教材框架介绍</div> */}
                   </div>
                 </div>
-
                 <div className="chumo">
                   <div className="se">
                     {/* <div>信息公开 -&gt;</div> */}
